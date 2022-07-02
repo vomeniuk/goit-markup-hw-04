@@ -121,6 +121,8 @@ img {
 }
 
 .contact-link {
+    display: flex;
+    justify-content: center;
     padding: 32px 0;
     font-size: var(--font-text);
     font-weight: var(--font-weight-main);
