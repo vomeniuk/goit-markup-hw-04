@@ -100,7 +100,17 @@ img {
     text-decoration: none;
     color: var(--dark-color);
     letter-spacing: 0.02em;
+    list-style: none;
 }
+.team-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    list-style: none;
+  }
+  .icon-list:nth-child(n + 2) {
+    margin-left: 10px;
+  }
 
 .nav-link:hover,
 .nav-link:focus {
@@ -229,6 +239,8 @@ img {
 .btn-menu:focus {
     background-color: var(--accent-color);
     color: var(--button-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* hero */
@@ -245,7 +257,10 @@ img {
         url(../images/background-img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-color: #2f303a;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 .hero-title {
@@ -394,8 +409,8 @@ img {
   
   .link-social-icon:hover,
   .link-social-icon:focus {
-    color: var(--secondary-color);
-    background-color: var(--hover-color);
+    color: var(--button-color);
+    background-color: var(--accent-color);
     border-radius: 50%;
   }
   
@@ -444,8 +459,17 @@ img {
   
   .link-icon:hover,
   .link-icon:focus {
-    color: #2196f3;
-    border: 1px solid #2196f3;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  .team-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .list-icon-wrapper li {
+    list-style: none;
   }
   
   .icon-clients {
@@ -453,6 +477,16 @@ img {
   }
   
 /* portfolio */
+.port-item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 3 - 30px));
+  }
+  .port-item:hover,
+  .port-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -485,6 +519,7 @@ img {
     padding: 6px 22px;
 
 }
+
 
 .cards-list {
     display: flex;
@@ -564,7 +599,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
   
-    color: #ffffff;
+    color: var(--button-color);
     margin-bottom: 20px;
   }
   
