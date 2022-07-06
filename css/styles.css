@@ -492,8 +492,8 @@ img {
     width: calc((100%- 90px) / 3);
 }
 
-.port-item:hover,
-.port-item:focus {
+.link:hover,
+.link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -536,14 +536,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 90px) / 3);
-    margin-right: -30px;
-    margin-bottom: -30px;
-}
-
-.cards-list>.item {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  
+  .cards-list > .item {
     margin-left: 30px;
     margin-top: 30px;
-}
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .cards-list .item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
 .text {
     font-size: 16px;
