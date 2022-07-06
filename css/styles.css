@@ -35,6 +35,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .link {
@@ -484,9 +486,10 @@ img {
 
 /* portfolio */
 .port-item {
-    margin-left: 30px;
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
     margin-bottom: 30px;
-    flex-basis: calc(100% / 3 - 30px));
+    width: calc((100%- 90px) / 3);
 }
 
 .port-item:hover,
@@ -533,8 +536,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 90px) / 3);
-    margin-left: -30px;
-    margin-top: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .cards-list>.item {
